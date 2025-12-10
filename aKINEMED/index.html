@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinemed Bolivia - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center transition-all duration-300 py-5">
+                    <a href="/index.html" class="flex items-center gap-2 text-xl font-bold text-cyan-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.7-1 2.1 4.4 3.2-7.4H21"/></svg>
+                        <span>Kinemed Bolivia</span>
+                    </a>
+                    <nav class="hidden md:flex items-center gap-6">
+                        <a href="/index.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300">Inicio</a>
+                        <a href="/servicios.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300">Servicios</a>
+                        <a href="/testimonios.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300">Testimonios</a>
+                        <a href="/reservas.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300">Reservas</a>
+                        <a href="/reservas.html">
+                            <button class="bg-cyan-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md">
+                                Agendar Cita
+                            </button>
+                        </a>
+                    </nav>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button">
+                            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                            <svg id="x-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-500 ease-in-out transform max-h-0 opacity-0 overflow-hidden">
+                <nav class="flex flex-col items-center gap-4 py-6">
+                    <a href="/index.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300 text-lg">Inicio</a>
+                    <a href="/servicios.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300 text-lg">Servicios</a>
+                    <a href="/testimonios.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300 text-lg">Testimonios</a>
+                    <a href="/reservas.html" class="text-slate-600 hover:text-cyan-500 transition-colors duration-300 text-lg">Reservas</a>
+                    <a href="/reservas.html">
+                        <button class="bg-cyan-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-cyan-600 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md mt-2">
+                            Agendar Cita
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow pt-20">
+            <div class="space-y-24 md:space-y-32">
+                <!-- Hero Section -->
+                <section id="hero" class="relative h-screen flex items-center justify-center text-white -mt-20 overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-fixed" style="background-image: url(img/1.jpg);"></div>
+                    <div class="absolute top-0 left-0 w-full h-full bg-cyan-800/60"></div>
+                    <div class="relative z-10 text-center p-4">
+                        <div class="animated-section">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight drop-shadow-lg">
+                                Recupera tu Movimiento, <br /> Redescubre tu Vida.
+                            </h1>
+                            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 drop-shadow-md">
+                                En Kinemed Bolivia, combinamos la última tecnología con un trato humano para ofrecerte la mejor rehabilitación física.
+                            </p>
+                            <a href="/reservas.html">
+                                <button class="bg-cyan-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-cyan-400 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center gap-2 mx-auto">
+                                    Agenda tu Evaluación <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Us Section -->
+                <div class="animated-section container mx-auto px-4">
+                    <div class="text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Tu Bienestar es Nuestra Prioridad</h2>
+                        <p class="max-w-3xl mx-auto text-slate-600">
+                            Somos un equipo de fisioterapeutas apasionados por la salud y el movimiento. Nuestro enfoque es 100% personalizado, creando planes de tratamiento que se adaptan a tus necesidades específicas para garantizar una recuperación efectiva y duradera.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Featured Services Section -->
+                <section class="container mx-auto px-4">
+                    <div class="animated-section">
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900">Nuestros Servicios Destacados</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Service 1 -->
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out h-full">
+                                <div class="flex items-center justify-center w-16 h-16 mb-6 bg-cyan-100 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-600"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.7-1 2.1 4.4 3.2-7.4H21"/></svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900">Fisioterapia Deportiva</h3>
+                                <p class="text-slate-600">Recuperación y prevención de lesiones en atletas. Mejora tu rendimiento y vuelve al juego más fuerte que nunca.</p>
+                            </div>
+                            <!-- Service 2 -->
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out h-full">
+                                <div class="flex items-center justify-center w-16 h-16 mb-6 bg-cyan-100 rounded-full">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-600"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900">Rehabilitación Post-Operatoria</h3>
+                                <p class="text-slate-600">Programas personalizados para una recuperación rápida y segura después de una cirugía, restaurando la movilidad.</p>
+                            </div>
+                            <!-- Service 3 -->
+                            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out h-full">
+                                <div class="flex items-center justify-center w-16 h-16 mb-6 bg-cyan-100 rounded-full">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-600"><path d="M3 3h5l2 2-3 3-2-2-2 3V3z"/><path d="m7 21 4.3-4.3"/><path d="m21 11-8-8-4.3 4.3"/><path d="m11 21 8-8"/></svg>
+                                </div>
+                                <h3 class="text-xl font-bold mb-3 text-slate-900">Terapia Manual Ortopédica</h3>
+                                <p class="text-slate-600">Técnicas avanzadas para tratar problemas musculoesqueléticos, aliviar el dolor y mejorar la función articular.</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <a href="/servicios.html" class="text-cyan-600 font-semibold hover:underline flex items-center justify-center gap-2">
+                                Ver todos los servicios <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Workshops Section -->
+                <section class="container mx-auto px-4">
+                    <div class="animated-section">
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900">Talleres y Cursos</h2>
+                        <div id="workshop-carousel" class="relative group">
+                            <div class="flex overflow-x-auto snap-x snap-mandatory py-4 -mx-4 px-4 space-x-6 scrollbar-hide">
+                                <!-- Workshop 1 -->
+                                <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                                    <div class="relative rounded-xl overflow-hidden shadow-lg group aspect-[4/3]">
+                                      <img src="https://picsum.photos/600/400?random=5" alt="Taller de Prevención de Lesiones" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                      <div class="absolute bottom-0 left-0 p-4 md:p-6 text-white w-full">
+                                        <h3 class="text-lg md:text-xl font-bold mb-1 truncate">Taller de Prevención de Lesiones</h3>
+                                        <p class="text-sm opacity-90 line-clamp-2">Aprende técnicas y ejercicios clave para mantener tu cuerpo fuerte y libre de lesiones comunes.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- Workshop 2 -->
+                                <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                                    <div class="relative rounded-xl overflow-hidden shadow-lg group aspect-[4/3]">
+                                      <img src="https://picsum.photos/600/400?random=6" alt="Ergonomía para Home Office" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                      <div class="absolute bottom-0 left-0 p-4 md:p-6 text-white w-full">
+                                        <h3 class="text-lg md:text-xl font-bold mb-1 truncate">Ergonomía para Home Office</h3>
+                                        <p class="text-sm opacity-90 line-clamp-2">Optimiza tu espacio de trabajo en casa para evitar dolores de espalda y cuello. Mejora tu postura y productividad.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- Workshop 3 -->
+                                <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                                    <div class="relative rounded-xl overflow-hidden shadow-lg group aspect-[4/3]">
+                                      <img src="https://picsum.photos/600/400?random=7" alt="Introducción al Vendaje Neuromuscular" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                      <div class="absolute bottom-0 left-0 p-4 md:p-6 text-white w-full">
+                                        <h3 class="text-lg md:text-xl font-bold mb-1 truncate">Introducción al Vendaje Neuromuscular</h3>
+                                        <p class="text-sm opacity-90 line-clamp-2">Descubre los fundamentos del kinesiotaping para aliviar el dolor y mejorar la función muscular.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- Workshop 4 -->
+                                <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                                    <div class="relative rounded-xl overflow-hidden shadow-lg group aspect-[4/3]">
+                                      <img src="https://picsum.photos/600/400?random=8" alt="Técnicas de Relajación y Estiramiento" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                      <div class="absolute bottom-0 left-0 p-4 md:p-6 text-white w-full">
+                                        <h3 class="text-lg md:text-xl font-bold mb-1 truncate">Técnicas de Relajación y Estiramiento</h3>
+                                        <p class="text-sm opacity-90 line-clamp-2">Libera la tensión acumulada y mejora tu flexibilidad con nuestra guía práctica de estiramientos.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- Workshop 5 -->
+                                <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4">
+                                    <div class="relative rounded-xl overflow-hidden shadow-lg group aspect-[4/3]">
+                                      <img src="https://picsum.photos/600/400?random=9" alt="Fortalecimiento del Core" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                      <div class="absolute bottom-0 left-0 p-4 md:p-6 text-white w-full">
+                                        <h3 class="text-lg md:text-xl font-bold mb-1 truncate">Fortalecimiento del Core</h3>
+                                        <p class="text-sm opacity-90 line-clamp-2">Un core fuerte es la base de un cuerpo sano. Únete a este taller para construir estabilidad y potencia.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button aria-label="Anterior" class="absolute top-1/2 -translate-y-1/2 left-0 z-10 bg-white/50 p-2 rounded-full shadow-md transition-all opacity-0 group-hover:opacity-100 group-hover:left-4 disabled:opacity-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            </button>
+                            <button aria-label="Siguiente" class="absolute top-1/2 -translate-y-1/2 right-0 z-10 bg-white/50 p-2 rounded-full shadow-md transition-all opacity-0 group-hover:opacity-100 group-hover:right-4 disabled:opacity-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section class="bg-slate-100 py-20">
+                    <div class="container mx-auto px-4">
+                        <div class="animated-section">
+                            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900">Lo que dicen nuestros pacientes</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <!-- Testimonial 1 -->
+                                <div class="bg-white p-8 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 h-full flex flex-col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-200 mb-4"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 7 4 8 7 8Z"/><path d="M14 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 7 4 8 7 8Z"/></svg>
+                                    <p class="text-slate-600 italic mb-6 flex-grow">"El equipo de Kinemed me ayudó a recuperarme de una lesión de rodilla en tiempo récord. ¡Su profesionalismo es inigualable!"</p>
+                                    <div class="flex items-center mt-auto">
+                                        <img src="https://picsum.photos/100/100?random=1" alt="Carlos Valdez" class="w-14 h-14 rounded-full mr-4" />
+                                        <div>
+                                            <p class="font-bold text-slate-800">Carlos Valdez</p>
+                                            <p class="text-sm text-slate-500">Atleta de élite</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial 2 -->
+                                <div class="bg-white p-8 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 h-full flex flex-col">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-200 mb-4"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 7 4 8 7 8Z"/><path d="M14 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 7 4 8 7 8Z"/></svg>
+                                    <p class="text-slate-600 italic mb-6 flex-grow">"Después de mi cirugía de hombro, pensé que no volvería a tener la misma movilidad. Gracias a Kinemed, estoy mejor que antes."</p>
+                                    <div class="flex items-center mt-auto">
+                                        <img src="https://picsum.photos/100/100?random=2" alt="Ana Sofía Rojas" class="w-14 h-14 rounded-full mr-4" />
+                                        <div>
+                                            <p class="font-bold text-slate-800">Ana Sofía Rojas</p>
+                                            <p class="text-sm text-slate-500">Diseñadora Gráfica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-12">
+                                <a href="/testimonios.html" class="text-cyan-600 font-semibold hover:underline flex items-center justify-center gap-2">
+                                    Leer más testimonios <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/59171234567?text=Hola%20Kinemed%2C%20quisiera%20agendar%20una%20cita%20o%20pedir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform transition-all duration-300 hover:scale-110 hover:bg-green-600 animate-bounce" aria-label="Contactar por WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+        </a>
+        
+        <!-- Footer -->
+        <footer class="bg-slate-800 text-slate-300 pt-16 pb-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="md:col-span-1">
+                        <a href="/index.html" class="flex items-center gap-2 text-2xl font-bold text-white mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.7-1 2.1 4.4 3.2-7.4H21"/></svg>
+                            <span>Kinemed</span>
+                        </a>
+                        <p class="text-sm text-slate-400">
+                            Tu centro de fisioterapia y rehabilitación. Recupera tu bienestar y maximiza tu potencial con nosotros.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-4">Navegación</h3>
+                        <ul class="space-y-2">
+                            <li><a href="/index.html" class="hover:text-cyan-400 transition-colors">Inicio</a></li>
+                            <li><a href="/servicios.html" class="hover:text-cyan-400 transition-colors">Servicios</a></li>
+                            <li><a href="/testimonios.html" class="hover:text-cyan-400 transition-colors">Testimonios</a></li>
+                            <li><a href="/reservas.html" class="hover:text-cyan-400 transition-colors">Reservas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-4">Contacto</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li>Av. San Martín #123, La Paz, Bolivia</li>
+                            <li>info@kinemed.bo</li>
+                            <li>+591 (3) 345-6789</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-4">Síguenos</h3>
+                        <div class="flex gap-4">
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-cyan-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-cyan-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" class="p-2 bg-slate-700 rounded-full hover:bg-cyan-500 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 1.4 2.8 3.2 2.8 5.5 0 3.9-3.3 7.1-7.4 7.1-1.4 0-2.8-.4-4-1.1-.5 2.3-2.3 4.4-4.7 5.5-1.2.6-2.5.8-3.8.8-1 0-2-.2-3-.5.8.9 1.8 1.6 2.9 2.1 2.3 1 4.8 1.4 7.3 1.1 6.3-.7 11.3-6.1 11.3-12.6 0-.2 0-.4 0-.6.6-.5 1.2-1 1.8-1.7z"/><path d="M13 8c0 3.3-2.7 6-6 6-1.5 0-2.8-.5-4-1.3.5 2.1 2.2 3.8 4.3 4.8 1.2.5 2.5.7 3.7.7 2.3 0 4.5-.8 6.2-2.3-1.2.6-2.5.9-3.8.9-2.6 0-5-1.4-6.4-3.5.7.2 1.5.3 2.2.3 1.3 0 2.6-.4 3.7-1.1-.3 1.9-2 3.5-4 4.6-1.1.6-2.3.9-3.5.9-1.2 0-2.3-.3-3.4-.8.9.9 2 1.6 3.1 2 2.3 1 4.8 1.3 7.2 1 6.3-.6 11.2-5.9 11.2-12.3 0-.2 0-.4-.1-.6.6-.5 1.2-1 1.8-1.6z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 border-t border-slate-700 pt-6 text-center text-sm text-slate-500">
+                    <p>&copy; 2024 Kinemed Bolivia. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/main.js"></script>
+</body>
+</html>
